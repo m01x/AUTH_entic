@@ -10,7 +10,7 @@ export class UsersService {
   constructor(
     @InjectRepository(User)
     private readonly userRepository: Repository<User>,
-  ) {}
+  ) { }
 
   async create(createUserDto: CreateUserDto) {
     const { password, ...userData } = createUserDto;
@@ -18,7 +18,7 @@ export class UsersService {
     // 1. Validar si el correo ya existe
     const userExists = await this.userRepository.findOneBy({ email: userData.email });
     if (userExists) {
-      throw new BadRequestException('El correo ya está registrado');
+      throw new BadRequestException('El correo ya está registradoz');
     }
 
     // 2. Encriptar contraseña (10 salt rounds es el estándar seguro)
