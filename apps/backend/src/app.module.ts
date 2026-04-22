@@ -17,12 +17,12 @@ import { UsersModule } from './users/users.module'; // Se agregó al generar el 
         password: configService.get<string>('DB_PASSWORD'),
         database: configService.get<string>('DB_NAME'),
         autoLoadEntities: true,
-        synchronize: true, 
+        synchronize: true,
       }),
     }),
     UsersModule, // Aquí está conectado nuestro nuevo módulo
   ],
   controllers: [], // Vacío
-  providers: [],   // Vacío
+  providers: [], // Vacío
 })
 export class AppModule {}

@@ -5,6 +5,8 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  //Agregaremos el prefijo '/api/' en los endpoints de mi aplicacion.
+  app.setGlobalPrefix('api');
 
   // 1. Activamos la validación global (protegerá nuestros endpoints)
   app.useGlobalPipes(
@@ -18,11 +20,13 @@ async function bootstrap() {
   // 2. Configuración de Swagger
   const config = new DocumentBuilder()
     .setTitle('AUTH_entic API')
-    .setDescription('Documentación de la API para nuestro sistema de autenticación')
+    .setDescription(
+      'Documentación de la API para nuestro sistema de autenticación',
+    )
     .setVersion('1.0')
     .addBearerAuth() // Preparando el terreno para nuestros futuros JWT
     .build();
-    
+
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api/docs', app, document);
 
