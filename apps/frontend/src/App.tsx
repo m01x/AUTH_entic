@@ -1,10 +1,13 @@
+import { Toaster } from "sonner"
+import { Login } from "./components/auth/Login"
 
 
 function App() {
 
   return (
     <>
-      <h1>AUTH_entic - frontend backbone.</h1>
+      <Login />
+      <Toaster />
     </>
   )
 }
