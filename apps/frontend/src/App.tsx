@@ -1,15 +1,16 @@
-import { Toaster } from "sonner"
-import { Login } from "./components/auth/Login"
+// import { Toaster } from "sonner"
+// import { Login } from "./components/auth/Login"
 
+// function App() {
 
-function App() {
+//   return (
+//     <>
+//       <Login />
+//       <Toaster />
+//     </>
+//   )
+// }
 
-  return (
-    <>
-      <Login />
-      <Toaster />
-    </>
-  )
-}
+// export default App
 
-export default App
+// Deprecated.
