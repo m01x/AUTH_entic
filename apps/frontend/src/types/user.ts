@@ -1,4 +1,4 @@
-interface User {
+export interface User {
     firstName: string;
     lastName: string;
     birthDate: string;
@@ -7,7 +7,7 @@ interface User {
     role?: UserRole;
 }
 
-type UserRole = 'USER' | 'ADMIN';
+export type UserRole = 'USER' | 'ADMIN';
 
 /**
  * 
