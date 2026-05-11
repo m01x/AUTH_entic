@@ -30,13 +30,11 @@ export function Sidebar() {
           <Link
             key={item.to}
             to={item.to}
-            className={cn(
-              "flex items-center gap-3 rounded-lg px-3 py-2.5",
-              "text-sm font-medium text-white/80",
-              "transition-all duration-200",
-              "hover:bg-white/10 hover:text-white",
-              "aria-[current=page]:bg-green-500/20 aria-[current=page]:text-green-400"
-            )}
+            activeProps={{
+              className: "bg-white/15 text-white",
+            }}
+            activeOptions={{ exact: true }}
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white/80 transition-all duration-200 hover:bg-white/10 hover:text-white"
           >
             <item.icon className="size-5" />
             <span>{item.label}</span>

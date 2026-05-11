@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ComingSoon } from "@/components/dashboard/ComingSoon";
+import { DashboardUserForm } from "@/components/dashboard/DashboardUserForm";
 
 export const Route = createFileRoute("/dashboard/users")({
   component: UsersPage,
@@ -7,9 +7,6 @@ export const Route = createFileRoute("/dashboard/users")({
 
 function UsersPage() {
   return (
-    <ComingSoon
-      title="Mantenedor de Usuarios"
-      description="La gestión de usuarios estará disponible pronto."
-    />
+    <DashboardUserForm />
   );
 }

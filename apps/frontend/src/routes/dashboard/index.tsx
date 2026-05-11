@@ -1,8 +1,9 @@
-import { LayoutDashboard } from "lucide-react";
+import { Badge as BadgeIcon, LayoutDashboard } from "lucide-react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PostsTable } from "@/components/dashboard/PostsTable";
 import { PostForm } from "@/components/dashboard/PostForm";
 import { mockPosts } from "@/lib/mockData";
+import { Badge } from "@/components/ui/badge";
 
 export const Route = createFileRoute("/dashboard/")({
   component: DashboardHome,
@@ -21,7 +22,7 @@ function DashboardHome() {
               Bienvenido al Dashboard
             </h2>
             <p className="mt-0.5 text-sm text-white/60">
-              Gestiona tu contenido y usuarios desde aquí
+              Bienvenido usuario - <Badge className="bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-300"><BadgeIcon /> usuario</Badge>
             </p>
           </div>
         </div>

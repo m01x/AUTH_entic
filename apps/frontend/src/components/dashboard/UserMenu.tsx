@@ -52,12 +52,12 @@ export function UserMenu({ user, getInitials }: UserMenuProps) {
         <DropdownMenuItem asChild>
           <Link
             to="/dashboard/profile"
-            className="flex items-center gap-2 text-white/80 hover:text-white"
+            className="flex items-center gap-2 text-black/80 hover:text-gray-500"
           >
             Mi Perfil
           </Link>
         </DropdownMenuItem>
-        <DropdownMenuSeparator className="bg-white/10" />
+        <DropdownMenuSeparator className="bg-gray-300 m-0.5" />
         <DropdownMenuItem
           onClick={handleLogout}
           className="text-red-400 focus:text-red-400 focus:bg-red-500/10"
@@ -65,6 +65,6 @@ export function UserMenu({ user, getInitials }: UserMenuProps) {
           Cerrar Sesión
         </DropdownMenuItem>
       </DropdownMenuContent>
-    </DropdownMenu>
+    </DropdownMenu >
   );
 }
