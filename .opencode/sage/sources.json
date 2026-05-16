@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "indexed_at": "2026-05-15T18:15:00Z",
+  "sources": [
+    {
+      "path": "ADR/common/ADR_001.md",
+      "type": "decision_records",
+      "priority": "high"
+    },
+    {
+      "path": "ADR/common/ADR_002.md",
+      "type": "decision_records",
+      "priority": "high"
+    },
+    {
+      "path": "ADR/common/ADR_003.md",
+      "type": "decision_records",
+      "priority": "high"
+    },
+    {
+      "path": "ADR/common/ADR_004.md",
+      "type": "decision_records",
+      "priority": "high"
+    },
+    {
+      "path": "ADR/common/ADR_005.md",
+      "type": "decision_records",
+      "priority": "high"
+    },
+    {
+      "path": ".opencode/FUNDAMENTOS.md",
+      "type": "specs",
+      "priority": "high"
+    },
+    {
+      "path": ".opencode/CLAUDE_PROJECT_CONTEXT.md",
+      "type": "specs",
+      "priority": "high"
+    },
+    {
+      "path": "README.md",
+      "type": "readme",
+      "priority": "medium"
+    },
+    {
+      "path": "apps/backend/package.json",
+      "type": "contracts",
+      "priority": "medium"
+    },
+    {
+      "path": "apps/frontend/package.json",
+      "type": "contracts",
+      "priority": "medium"
+    },
+    {
+      "path": "apps/backend/docker-compose.yml",
+      "type": "other",
+      "priority": "medium"
+    },
+    {
+      "path": "apps/backend/src/users/dto/create-user.dto.ts",
+      "type": "contracts",
+      "priority": "medium"
+    },
+    {
+      "path": "apps/frontend/src/types/user.ts",
+      "type": "contracts",
+      "priority": "medium"
+    }
+  ],
+  "skills_detected": []
+}
