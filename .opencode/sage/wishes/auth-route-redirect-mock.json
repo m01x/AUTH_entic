@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "id": "auth-route-redirect-mock",
+  "title": "Redirección de /auth según estado de autenticación (mock)",
+  "created_at": "2026-05-16T20:30:00.000Z",
+  "co_op_level": "formal",
+  "original_goal": "En este momento, la ruta localhost:5173/auth llega a una pantalla en blanco. Me gustaria que redirigiese al usuario al login, en caso que no se encuentre autenticado y si se encuentra autenticado, que lo dirija al dashboard. En este momento no esta implementada la autenticacion, pero podemos hacerlo con una variable dentro del mismoi archivo, que yo le estableca authenticated= true/false. Que quede un TODO para cuando este algo mas trabajado el backend.",
+  "stack_preferences": ["React", "TanStack Router", "TypeScript"],
+  "plan": [
+    {
+      "step": 1,
+      "task": "Leer y entender el layout actual de auth/route.tsx — por qué /auth da pantalla en blanco y cómo funciona Outlet en TanStack Router",
+      "type": "obligatorio",
+      "status": "done"
+    },
+    {
+      "step": 2,
+      "task": "Implementar redirección condicional con variable mock `authenticated` usando Navigate de TanStack Router",
+      "type": "obligatorio",
+      "status": "in_progress"
+    },
+    {
+      "step": 3,
+      "task": "Verificar que las rutas hijas (/auth/login, /auth/register) no se rompan con la redirección",
+      "type": "obligatorio",
+      "status": "pending"
+    },
+    {
+      "step": 4,
+      "task": "Probar ambos escenarios (auth=true, auth=false) en el navegador",
+      "type": "obligatorio",
+      "status": "pending"
+    },
+    {
+      "step": 5,
+      "task": "Dejar TODO documentado para integración real con backend (JWT, dónde leer estado, librería sugerida)",
+      "type": "obligatorio",
+      "status": "pending"
+    }
+  ],
+  "decisions": [],
+  "sessions": [
+    {
+      "timestamp": "2026-05-16T20:30:00.000Z",
+      "summary": "Wish creado. Plan de 5 pasos confirmado en nivel Formal.",
+      "blockers": null
+    }
+  ],
+  "status": "active"
+}

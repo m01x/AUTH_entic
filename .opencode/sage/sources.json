@@ -1,71 +1,191 @@
 {
   "version": "1.0",
-  "indexed_at": "2026-05-15T18:15:00Z",
+  "indexed_at": "2026-05-16T20:18:00.000Z",
   "sources": [
-    {
-      "path": "ADR/common/ADR_001.md",
-      "type": "decision_records",
-      "priority": "high"
-    },
-    {
-      "path": "ADR/common/ADR_002.md",
-      "type": "decision_records",
-      "priority": "high"
-    },
-    {
-      "path": "ADR/common/ADR_003.md",
-      "type": "decision_records",
-      "priority": "high"
-    },
-    {
-      "path": "ADR/common/ADR_004.md",
-      "type": "decision_records",
-      "priority": "high"
-    },
-    {
-      "path": "ADR/common/ADR_005.md",
-      "type": "decision_records",
-      "priority": "high"
-    },
-    {
-      "path": ".opencode/FUNDAMENTOS.md",
-      "type": "specs",
-      "priority": "high"
-    },
-    {
-      "path": ".opencode/CLAUDE_PROJECT_CONTEXT.md",
-      "type": "specs",
-      "priority": "high"
-    },
     {
       "path": "README.md",
       "type": "readme",
       "priority": "medium"
     },
     {
-      "path": "apps/backend/package.json",
-      "type": "contracts",
-      "priority": "medium"
+      "path": "pnpm-workspace.yaml",
+      "type": "workspace_config",
+      "priority": "high"
     },
     {
-      "path": "apps/frontend/package.json",
-      "type": "contracts",
-      "priority": "medium"
+      "path": "ADR/common/",
+      "type": "decision_records",
+      "priority": "high"
+    },
+    {
+      "path": "ADR/common/ADR_001.md",
+      "type": "decision_record",
+      "priority": "high",
+      "summary": "Configuración de compilación y gestión de dependencias en monorepo (pnpm + NestJS)"
+    },
+    {
+      "path": "ADR/common/ADR_002.md",
+      "type": "decision_record",
+      "priority": "high",
+      "summary": "Implementación de endpoints CRUD en UsersController y UsersService — prefijo API global"
+    },
+    {
+      "path": "ADR/common/ADR_003.md",
+      "type": "decision_record",
+      "priority": "high",
+      "summary": "Roadmap de desarrollo y estrategia de implementación fullstack (vertical slices, fases 1-5)"
+    },
+    {
+      "path": "ADR/common/ADR_004.md",
+      "type": "decision_record",
+      "priority": "high",
+      "summary": "Layout de dashboard con sidebar glassmorphism y routing por vistas (TanStack Router)"
+    },
+    {
+      "path": "ADR/common/ADR_005.md",
+      "type": "decision_record",
+      "priority": "high",
+      "summary": "Formulario de usuario con glassmorphism — tipado y componentes shadcn (DashboardUserForm)"
+    },
+    {
+      "path": ".opencode/FUNDAMENTOS.md",
+      "type": "project_context",
+      "priority": "high"
+    },
+    {
+      "path": ".opencode/CLAUDE_PROJECT_CONTEXT.md",
+      "type": "project_context_ai",
+      "priority": "high"
+    },
+    {
+      "path": "apps/backend/package.json",
+      "type": "package_manifest",
+      "priority": "high"
+    },
+    {
+      "path": "apps/backend/tsconfig.json",
+      "type": "tsconfig",
+      "priority": "high"
+    },
+    {
+      "path": "apps/backend/nest-cli.json",
+      "type": "framework_config",
+      "priority": "high"
     },
     {
       "path": "apps/backend/docker-compose.yml",
-      "type": "other",
+      "type": "infrastructure",
       "priority": "medium"
+    },
+    {
+      "path": "apps/backend/src/main.ts",
+      "type": "entrypoint",
+      "priority": "high"
+    },
+    {
+      "path": "apps/backend/src/app.module.ts",
+      "type": "root_module",
+      "priority": "high"
+    },
+    {
+      "path": "apps/backend/src/users/",
+      "type": "domain_module",
+      "priority": "high",
+      "description": "Módulo Users — entidad, DTOs, controlador REST, servicio (CRUD parcialmente implementado)"
     },
     {
       "path": "apps/backend/src/users/dto/create-user.dto.ts",
-      "type": "contracts",
+      "type": "dto",
+      "priority": "high"
+    },
+    {
+      "path": "apps/backend/src/users/dto/update-user.dto.ts",
+      "type": "dto",
+      "priority": "high"
+    },
+    {
+      "path": "apps/backend/src/users/entities/user.entity.ts",
+      "type": "entity",
+      "priority": "high"
+    },
+    {
+      "path": "apps/backend/src/users/users.controller.ts",
+      "type": "controller",
+      "priority": "high"
+    },
+    {
+      "path": "apps/backend/src/users/users.service.ts",
+      "type": "service",
+      "priority": "high"
+    },
+    {
+      "path": "apps/frontend/package.json",
+      "type": "package_manifest",
+      "priority": "high"
+    },
+    {
+      "path": "apps/frontend/vite.config.ts",
+      "type": "build_config",
+      "priority": "high"
+    },
+    {
+      "path": "apps/frontend/tsconfig.app.json",
+      "type": "tsconfig",
+      "priority": "high"
+    },
+    {
+      "path": "apps/frontend/src/main.tsx",
+      "type": "entrypoint",
+      "priority": "high"
+    },
+    {
+      "path": "apps/frontend/src/index.css",
+      "type": "design_system",
+      "priority": "high",
+      "description": "Tailwind CSS + shadcn design tokens + utilidades glassmorphism"
+    },
+    {
+      "path": "apps/frontend/src/routeTree.gen.ts",
+      "type": "router_tree",
       "priority": "medium"
     },
     {
+      "path": "apps/frontend/src/routes/",
+      "type": "routes",
+      "priority": "high"
+    },
+    {
+      "path": "apps/frontend/src/components/auth/",
+      "type": "components",
+      "priority": "high",
+      "description": "Componentes de autenticación (Login, LoginCard)"
+    },
+    {
+      "path": "apps/frontend/src/components/dashboard/",
+      "type": "components",
+      "priority": "high",
+      "description": "Componentes del dashboard (Sidebar, UserMenu, Dashboard, formularios, tabla, ComingSoon)"
+    },
+    {
+      "path": "apps/frontend/src/components/ui/",
+      "type": "design_system_components",
+      "priority": "medium",
+      "description": "Componentes shadcn/ui (14 componentes: avatar, badge, button, card, checkbox, dropdown-menu, input, label, lock-spinner, select, separator, skeleton, sonner, table, textarea)"
+    },
+    {
+      "path": "apps/frontend/src/lib/mockData.ts",
+      "type": "mock_data",
+      "priority": "low"
+    },
+    {
       "path": "apps/frontend/src/types/user.ts",
-      "type": "contracts",
+      "type": "types",
       "priority": "medium"
+    },
+    {
+      "path": "apps/frontend/src/hooks/useToast.ts",
+      "type": "hooks",
+      "priority": "low"
     }
   ],
   "skills_detected": []
